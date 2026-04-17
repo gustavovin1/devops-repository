@@ -1,8 +1,12 @@
-name: Continuos Integration Test
+name: Continuous Integration Test
 on:
   pull_request:
     branches:
       - main
+permissions:
+  actions: read
+  contents: read
+  security-events: write
 
 jobs:
   build:
