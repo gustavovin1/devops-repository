@@ -1,5 +1,8 @@
 name: Continuos Integration Test
 on: [push]
+permissions:
+  contents: read
+  security-events: write
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
