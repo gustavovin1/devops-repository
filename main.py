@@ -6,5 +6,5 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 @app.get("/random-int")
-async def funcaoteste():
+async def random_int():
     return {"teste": True, "random_int": random.randint(1, 10)}
